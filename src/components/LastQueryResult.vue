@@ -48,7 +48,7 @@ export default {
     async fetchLastQueryResult() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/contacts/last-query"
+          "https://imaginecx-api.azurewebsites.net/contacts/last-query"
         );
         this.lastQueryResult = response.data;
         console.log(this.lastQueryResult);

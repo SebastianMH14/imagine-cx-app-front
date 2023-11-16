@@ -94,7 +94,7 @@ export default {
   methods: {
     async createContact() {
       try {
-        const response = await axios.post("http://localhost:3000/contacts", {
+        const response = await axios.post("https://imaginecx-api.azurewebsites.net/contacts", {
           firstname: this.firstname,
           lastname: this.lastname,
           address: {

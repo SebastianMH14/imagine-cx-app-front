@@ -202,7 +202,7 @@ export default {
       }, 2000);
       try {
         this.loading = true;
-        const response = await axios.get("http://localhost:3000/contacts");
+        const response = await axios.get("https://imaginecx-api.azurewebsites.net/contacts");
         const data = response.data;
         this.contacts = data.data;
         this.nextPage = data.next;
@@ -219,7 +219,7 @@ export default {
 
       try {
         this.loading = true;
-        const response = await axios.get("http://localhost:3000/contacts", {
+        const response = await axios.get("https://imaginecx-api.azurewebsites.net/contacts", {
           params: {
             ...this.searchParams,
             next: this.nextPage,
@@ -253,7 +253,7 @@ export default {
     async updateContact() {
       try {
         const response = await axios.put(
-          `http://localhost:3000/contacts/${this.updateFormData.id}`,
+          `https://imaginecx-api.azurewebsites.net/contacts/${this.updateFormData.id}`,
           this.updateFormData
         );
         this.successMessage = response.data.message;
@@ -269,7 +269,7 @@ export default {
     async deleteContact(contactId) {
       try {
         const response = await axios.delete(
-          `http://localhost:3000/contacts/${contactId}`
+          `https://imaginecx-api.azurewebsites.net/contacts/${contactId}`
         );
         this.successMessage = response.data.message;
 
@@ -282,7 +282,7 @@ export default {
     async performSearch() {
       try {
         this.loading = true;
-        const response = await axios.get("http://localhost:3000/contacts", {
+        const response = await axios.get("https://imaginecx-api.azurewebsites.net/contacts", {
           params: {
             ...this.searchParams,
             [this.searchBy]: this.query,
