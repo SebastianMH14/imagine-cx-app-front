@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Inicio</a>
+            <router-link class="nav-link" to="/">Inicio</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/create-contact">Crear Contacto</a>
+            <router-link class="nav-link" to="/create-contact">Crear Contacto</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/last-query">Ultima consulta</a>
+            <router-link class="nav-link" to="/last-query">Ultima consulta</router-link>
           </li>
         </ul>
       </div>
