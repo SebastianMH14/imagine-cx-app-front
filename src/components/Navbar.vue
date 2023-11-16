@@ -24,10 +24,14 @@
             <router-link class="nav-link" to="/">Inicio</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/create-contact">Crear Contacto</router-link>
+            <router-link class="nav-link" to="/create-contact"
+              >Crear Contacto</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/last-query">Ultima consulta</router-link>
+            <router-link class="nav-link" to="/last-query"
+              >Ultima consulta</router-link
+            >
           </li>
         </ul>
       </div>
